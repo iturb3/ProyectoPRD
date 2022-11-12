@@ -1,0 +1,47 @@
+<?php
+    
+    //Envio de datos por get
+
+    //$_GET
+
+    echo "<pre>";
+    print_r($_GET);
+    echo "</pre>";
+
+    $nombre = $_GET["nombre"];
+    $edad = $_GET["edad"];
+
+    echo "En nombre llego: " . $nombre;
+    echo "<br>";
+    echo "En edad llego: " . $edad;
+
+    echo "<br><br>";
+
+
+    if($edad >= 1 && $edad <= 12){
+        echo $nombre . " eres un niñ@";
+    }else if($edad >= 13 && $edad <= 20){
+        echo $nombre . " eres un adolescente";
+    }else if($edad >= 21 && $edad <= 35){
+        echo $nombre . " eres un adulto joven";
+    }else if($edad > 36){
+        echo $nombre . " ya estas grande =P ";
+    }
+
+
+    
+    //Envio de datos por post
+
+    //$_POST
+
+//    echo "<pre>";
+//    print_r($_POST);
+//    echo "</pre>";
+//
+//    echo $_POST["nombre"];
+//    echo "<br>";
+//    echo $_POST["edad"];
+    
+   
+
+?>
